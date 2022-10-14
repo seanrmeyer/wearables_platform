@@ -27,7 +27,7 @@ services:
     environment:
       - POSTGRES_USER=fastapi_traefik
       - POSTGRES_PASSWORD=fastapi_traefik
-      - POSTGRES_DB=wearables
+      - POSTGRES_DB=fastapi_traefik
   pgadmin:
     container_name: pgadmin4_container
     image: dpage/pgadmin4

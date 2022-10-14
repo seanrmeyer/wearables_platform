@@ -19,6 +19,7 @@ CREATE TABLE studies (
     study_abstract TEXT,
     year_published INTEGER,
     date_added timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    subject_count INTEGER,
     enabled boolean DEFAULT TRUE,
     PRIMARY KEY (study_id)
 );
@@ -41,7 +42,7 @@ CREATE TABLE steps (
     study_id INTEGER NOT NULL,
     start_time timestamp,
     end_time timestamp,
-	steps integer,
+	steps REAL,
     time_index INTEGER,
     PRIMARY KEY (id),
     FOREIGN KEY (study_id) REFERENCES studies(study_id) ON DELETE CASCADE,
@@ -58,7 +59,7 @@ CREATE TABLE heart_rate (
     study_id INTEGER NOT NULL,
     start_time timestamp,
     end_time timestamp,
-	heart_rate integer,
+	heart_rate REAL,
     time_index INTEGER,
     PRIMARY KEY (id),
     FOREIGN KEY (study_id) REFERENCES studies(study_id) ON DELETE CASCADE,
