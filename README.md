@@ -45,3 +45,6 @@ Note: To increase file upload capacity, go to File > Storage > Options within pg
 2. Use Tools -> Import/Export data to upload binary (.bin), comma separated values (.csv), or text files (.txt)
 3. Columns to import must match by order of table
 
+# More information
+
+Refer to [this link](https://testdriven.io/blog/fastapi-docker-traefik/) for more information on upstream images
