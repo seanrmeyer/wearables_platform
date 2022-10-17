@@ -9,7 +9,6 @@ This repo is the configuration for building a Wearables Data Sharing Platform us
 
 # folder contents
 
-- `templates` (folder) - contains html templates for the flask API
 - `app` - python code which serves the API
 - `docker_compose.sh` - a script to build and start the docker image
 - `docker_test_api.sh` - a curl script to test the API once the container is running
